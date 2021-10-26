@@ -40,7 +40,7 @@ async def stop(client, m: Message):
       try:
          await call_py.leave_group_call(chat_id)
          clear_queue(chat_id)
-         await m.reply("**✅ Streaming ended**")
+         await m.reply("**DAAH GUA CAPE PUQI**")
       except Exception as e:
          await m.reply(f"**ERROR** \n`{e}`")
    else:
@@ -52,7 +52,7 @@ async def pause(client, m: Message):
    if chat_id in QUEUE:
       try:
          await call_py.pause_stream(chat_id)
-         await m.reply("**Paused Streaming ⏸️**")
+         await m.reply("**BENTAR GUA ISTIRAHAT DULU YA ANJ**")
       except Exception as e:
          await m.reply(f"**ERROR** \n`{e}`")
    else:
@@ -64,7 +64,7 @@ async def resume(client, m: Message):
    if chat_id in QUEUE:
       try:
          await call_py.resume_stream(chat_id)
-         await m.reply("**Resumed Streaming ▶**")
+         await m.reply("**GUA LANJUTIN LAGI NIH ANJ**")
       except Exception as e:
          await m.reply(f"**ERROR** \n`{e}`")
    else:
