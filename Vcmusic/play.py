@@ -51,7 +51,7 @@ async def play(client, m: Message):
    chat_id = m.chat.id
    if replied:
       if replied.audio or replied.voice:
-         huehue = await replied.reply("📥 Downloading")
+         huehue = await replied.reply("🔄 **SABAR YA KIMAK LAGI GUA PROSES**")
          dl = await replied.download()
          link = replied.link
          if replied.audio:
@@ -63,7 +63,7 @@ async def play(client, m: Message):
             songname = "Voice Note"
          if chat_id in QUEUE:
             pos = add_to_queue(chat_id, songname, dl, link, "Audio", 0)
-            await huehue.edit(f"🔢 Added to queue at position  » **{pos}**")
+            await huehue.edit(f"🔢 **LAGU GUA MASUKIN ANTRIAN KE  » **{pos}**")
          else:
             await call_py.join_group_call(
                chat_id,
@@ -78,11 +78,11 @@ async def play(client, m: Message):
          if len(m.command) < 2:
             await m.reply("💡 Reply to an Audio File or give something to Search")
          else:
-            huehue = await m.reply("🔎 Searching")
+            huehue = await m.reply("🔎 **SABAR YA ANJ GUA SARI DULU NIH KIMAK**")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             if search==0:
-               await huehue.edit("❌ Found Nothing for the Given Query")
+               await huehue.edit("❌ **LU YANG BENER APA KALO KETIK JUDUL LAGU")
             else:
                songname = search[0]
                url = search[1]
@@ -92,7 +92,7 @@ async def play(client, m: Message):
                else:
                   if chat_id in QUEUE:
                      pos = add_to_queue(chat_id, songname, ytlink, url, "Audio", 0)
-                     await huehue.edit(f"🔢 Added to queue at position » **{pos}**")
+                     await huehue.edit(f"🔢 **LAGU GUA MASUKIN DI ANTRIAN KE » **{pos}**")
                   else:
                      try:
                         await call_py.join_group_call(
