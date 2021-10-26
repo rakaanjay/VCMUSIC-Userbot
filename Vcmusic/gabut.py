@@ -7,27 +7,30 @@ from pyrogram import filters
 from pyrogram.types import Message
 from config import bot, HNDLR, OWNER_ID
 
-@Client.on_message(filters.user(OWNER_ID) & filters.command(['p'], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.user(OWNER_ID) & filters.command(['dtg'], prefixes=f"{HNDLR}"))
 async def asa(client, m: Message):
-   await m.edit("`Assalamualaikum wr.rb`")
+   await m.edit("`hallo ges zeinzo hadir buat mencerahkan meki meki kalian yang gelap`")
 
-@Client.on_message(filters.user(OWNER_ID) & filters.command(['l'], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.user(OWNER_ID) & filters.command(['plg'], prefixes=f"{HNDLR}"))
 async def wasa(client, m: Message):
-   await m.edit("`Waalaikumussalam wr.rb`")
+   await m.edit("`yaudah ya ges zeinzo mau pamit,meki kalian udh cerah kan?yaudah byee`")
 
-@Client.on_message(filters.user(OWNER_ID) & filters.command(['tll'], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.user(OWNER_ID) & filters.command(['durhaka'], prefixes=f"{HNDLR}"))
 async def tol(client, m: Message):
-   await m.edit("**DUH GINI NIH BOCAH YG LAHIR DI GUBUK BAMBU REOT + GAPUNYA HARGA DIRI**")
-   sleep(3)
-   await m.edit("**PADAHAL MAH DARI KECIL DIAJARIN SM EMAKNYA GABOLEH SONGONG SM MAJIKAN MASIH AJA SONGONG, MENDING LO URUSIN DULU GOBLOK KELUARGA LO YG PENYAKITAN ITU**")
-   sleep(5)
-   await m.edit("**MANA BAPA LO KAKINYA BOROK BEGITU AJG BERNANAH BAU AMIS IDIH GELI BET GELI GUA LIATNYA**")
-   sleep(4)
-   await m.edit("**NAH SEKALIAN TUH URUSIN JUGA ADE LO TUH, KALO BUKAN KARENA GUA MAH ADE LO UDAH MENINGGAL KENA TUMOR TOLOL MAKANYA LO KUDU SUJUD DEPAN GUA YAKAN**")
-   sleep(4)
-   await m.edit("**EMAK LO JUGA TUH JAGAIN UDAH BISU BEGITU YAKAN TAKUTNYA JATOH GABISA TREAK, MAKANYA NIH YA JANGAN KEBANYAKAN KONSUMSI SASA MICIN GOBLOK LIAT KAN EFEKNYA LO JADI KEK BOCAH AYAN BEGITU, SAMPE² LO BERANI GITU YAKAN NYENGGET JEMURAN ORANG SAMPE LO DIPUKULIN TRUS DI INJEK² SAMA WARGA SEKAMPUNGAN**")
-   sleep(7)
-   await m.edit("**GINI YA GUA KASIH TAU NIH SAMA LO NIH KALO UDA MISKIN KAGA USAH BELAGU SEGALA TOLOL, MIKIR LO MAKAN AJA SUSAH SAMPE NGEMIS² DI KOMPLEK PERUMAHAN GUA SAMPE DI USIR SAMA SATPAM KOMPLEK GUA**")
-   sleep(6)
-   await m.edit("**BERAS AJA LO BOLEH DIBAGI SAMA EMAK GUA YAKAN LAUK PAUK IKAN, AYAM, DAGING SEGALA RUPA AJA LO BOLEH NYOLONG DARI PASAR BOCAH KAYA LO MAH GIZINYA KURANG DONGO SABAN HARI MAKAN INDOMI 1 PAKE TELOR DOANG ITU JUGA JOINAN SM KELUARGA LU, KARENA APA?, YA KARENA LO MISKIN GA MAMPU BELI MAKANAN YG BERGIZI, DIKASIH KUAH SAYUR KANGKUNG JUGA MAO TOLOL ITU JUGA UDAH BERSYUKUR BISA MAKAN MAKANAN SELAEN MI INSTAN YAKAN SECARA LO GABISA GITU KEK GUA YAKAN MAKAN APA YG GUA MAO LAH ELO MAKAN MAKANAN TONG SAMPAH JUGA UDAH ALHAMDULILLAH BANGET AJG**")
+   await m.edit("**iya gua tau hidup lu lebih ampas**")
+   sleep(1)
+   await m.edit("**tapi jangan lu lampiasin ke telgram**")
+   sleep(1)
+   await m.edit("**emang bokap lu ga bisa jadi pelampiasan?**")
+   sleep(1)
+   await m.edit("**coba dah biar lu ngerasa lebih lega,lu pukul bokap lu**")
+   sleep(1)
+   await m.edit("**terus lu tendang kepalanya**")
+   sleep(1)
+   await m.edit("**terus lu smackdown ke aspal**")
+   sleep(1)
+   await m.edit("**terus lu kunci biar lu menang**")
+   sleep(1)
+   await m.edit("**menjalani hidup yang ampas jangan nanggung nanggung**")
+
 
